@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerRegister.Designer.vb">
+      <DependentUpon>CustomerRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mainpage_SMH.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomerRegister.resx">
+      <DependentUpon>CustomerRegister.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mainpage_SMH.resx">
       <DependentUpon>Mainpage_SMH.vb</DependentUpon>
     </EmbeddedResource>
@@ -116,13 +125,27 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\default_avatar.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\landing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b40f248efa495b3bd59f34e93ef1b825.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\couple-massage-420x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hp-notepad-pencil-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
