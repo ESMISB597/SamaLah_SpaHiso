@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Mainpage_SMH
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Mainpage_SMH
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.LandingPage_Box = New System.Windows.Forms.GroupBox()
@@ -29,13 +29,15 @@ Partial Class Mainpage_SMH
         Me.Time_Proc = New System.Windows.Forms.Timer(Me.components)
         Me.TimeLabel = New System.Windows.Forms.Label()
         Me.LoginGroupbox = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Reset_Button = New System.Windows.Forms.Button()
-        Me.Login_Button = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Password_Box = New System.Windows.Forms.TextBox()
         Me.UserName_Box = New System.Windows.Forms.TextBox()
+        Me.Password_Box = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Login_Button = New System.Windows.Forms.Button()
+        Me.Reset_Button = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.LandingPage_Box.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LoginGroupbox.SuspendLayout()
@@ -87,6 +89,7 @@ Partial Class Mainpage_SMH
         '
         'LoginGroupbox
         '
+        Me.LoginGroupbox.Controls.Add(Me.RegisterButton)
         Me.LoginGroupbox.Controls.Add(Me.PictureBox1)
         Me.LoginGroupbox.Controls.Add(Me.Reset_Button)
         Me.LoginGroupbox.Controls.Add(Me.Login_Button)
@@ -101,24 +104,20 @@ Partial Class Mainpage_SMH
         Me.LoginGroupbox.TabStop = False
         Me.LoginGroupbox.Text = "Login"
         '
-        'PictureBox1
+        'UserName_Box
         '
-        Me.PictureBox1.Image = Global.Samalah_SpaHiso.My.Resources.Resources.default_avatar
-        Me.PictureBox1.Location = New System.Drawing.Point(30, 45)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(176, 173)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.UserName_Box.Location = New System.Drawing.Point(21, 278)
+        Me.UserName_Box.Name = "UserName_Box"
+        Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
+        Me.UserName_Box.TabIndex = 0
         '
-        'Reset_Button
+        'Password_Box
         '
-        Me.Reset_Button.Location = New System.Drawing.Point(138, 362)
-        Me.Reset_Button.Name = "Reset_Button"
-        Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
-        Me.Reset_Button.TabIndex = 5
-        Me.Reset_Button.Text = "ล้างทั้งหมด"
-        Me.Reset_Button.UseVisualStyleBackColor = True
+        Me.Password_Box.Location = New System.Drawing.Point(21, 326)
+        Me.Password_Box.Name = "Password_Box"
+        Me.Password_Box.Size = New System.Drawing.Size(196, 20)
+        Me.Password_Box.TabIndex = 1
+        Me.Password_Box.UseSystemPasswordChar = True
         '
         'Login_Button
         '
@@ -128,24 +127,6 @@ Partial Class Mainpage_SMH
         Me.Login_Button.TabIndex = 4
         Me.Login_Button.Text = "เข้าสู่ระบบ"
         Me.Login_Button.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 310)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "รหัสผู้ใช้งาน"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 259)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "ชื่อผู้ใช้งาน"
         '
         'Password_Box
         '
@@ -161,6 +142,58 @@ Partial Class Mainpage_SMH
         Me.UserName_Box.Name = "UserName_Box"
         Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
         Me.UserName_Box.TabIndex = 0
+
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(18, 288)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "รหัสผู้ใช้งาน"
+        '
+        'Login_Button
+        '
+        Me.Login_Button.Location = New System.Drawing.Point(21, 362)
+        Me.Login_Button.Name = "Login_Button"
+        Me.Login_Button.Size = New System.Drawing.Size(79, 23)
+        Me.Login_Button.TabIndex = 4
+        Me.Login_Button.Text = "เข้าสู่ระบบ"
+        Me.Login_Button.UseVisualStyleBackColor = True
+        '
+        'Reset_Button
+        '
+        Me.Reset_Button.Location = New System.Drawing.Point(138, 362)
+        Me.Reset_Button.Name = "Reset_Button"
+        Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
+        Me.Reset_Button.TabIndex = 5
+        Me.Reset_Button.Text = "ล้างทั้งหมด"
+        Me.Reset_Button.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Samalah_SpaHiso.My.Resources.Resources.default_avatar
+        Me.PictureBox1.Location = New System.Drawing.Point(30, 45)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(176, 173)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Samalah_SpaHiso.My.Resources.Resources.landing
+        Me.PictureBox2.Location = New System.Drawing.Point(8, 18)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(631, 307)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(6, 331)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(631, 147)
+        Me.ListBox1.TabIndex = 1
         '
         'Mainpage_SMH
         '
@@ -198,4 +231,5 @@ Partial Class Mainpage_SMH
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents RegisterButton As Button
 End Class
