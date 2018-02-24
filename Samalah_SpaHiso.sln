@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Samalah_SpaHiso", "Samalah_SpaHiso\Samalah_SpaHiso.vbproj", "{19D02CB9-5C93-4278-94FD-5C41D19C2004}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DC3CF3B-1C5C-4129-BAB3-527435ABD499}"
+	ProjectSection(SolutionItems) = preProject
+		Samalah_SpaHiso\point_collect.Designer.vb = Samalah_SpaHiso\point_collect.Designer.vb
+		Samalah_SpaHiso\point_collect.resx = Samalah_SpaHiso\point_collect.resx
+		Samalah_SpaHiso\point_collect.vb = Samalah_SpaHiso\point_collect.vb
+		Samalah_SpaHiso\service_product.Designer.vb = Samalah_SpaHiso\service_product.Designer.vb
+		Samalah_SpaHiso\service_product.resx = Samalah_SpaHiso\service_product.resx
+		Samalah_SpaHiso\service_product.vb = Samalah_SpaHiso\service_product.vb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

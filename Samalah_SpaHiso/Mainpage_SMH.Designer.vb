@@ -36,6 +36,7 @@ Partial Class Mainpage_SMH
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Password_Box = New System.Windows.Forms.TextBox()
         Me.UserName_Box = New System.Windows.Forms.TextBox()
+        Me.Register_Button = New System.Windows.Forms.Button()
         Me.LandingPage_Box.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LoginGroupbox.SuspendLayout()
@@ -87,6 +88,7 @@ Partial Class Mainpage_SMH
         '
         'LoginGroupbox
         '
+        Me.LoginGroupbox.Controls.Add(Me.Register_Button)
         Me.LoginGroupbox.Controls.Add(Me.Label3)
         Me.LoginGroupbox.Controls.Add(Me.PictureBox1)
         Me.LoginGroupbox.Controls.Add(Me.Reset_Button)
@@ -104,7 +106,7 @@ Partial Class Mainpage_SMH
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 262)
+        Me.Label3.Location = New System.Drawing.Point(18, 240)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(58, 13)
         Me.Label3.TabIndex = 8
@@ -122,7 +124,7 @@ Partial Class Mainpage_SMH
         '
         'Reset_Button
         '
-        Me.Reset_Button.Location = New System.Drawing.Point(138, 356)
+        Me.Reset_Button.Location = New System.Drawing.Point(138, 334)
         Me.Reset_Button.Name = "Reset_Button"
         Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
         Me.Reset_Button.TabIndex = 5
@@ -131,7 +133,7 @@ Partial Class Mainpage_SMH
         '
         'Login_Button
         '
-        Me.Login_Button.Location = New System.Drawing.Point(21, 356)
+        Me.Login_Button.Location = New System.Drawing.Point(21, 334)
         Me.Login_Button.Name = "Login_Button"
         Me.Login_Button.Size = New System.Drawing.Size(79, 23)
         Me.Login_Button.TabIndex = 4
@@ -141,7 +143,7 @@ Partial Class Mainpage_SMH
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 307)
+        Me.Label2.Location = New System.Drawing.Point(18, 285)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(64, 13)
         Me.Label2.TabIndex = 3
@@ -149,7 +151,7 @@ Partial Class Mainpage_SMH
         '
         'Password_Box
         '
-        Me.Password_Box.Location = New System.Drawing.Point(21, 326)
+        Me.Password_Box.Location = New System.Drawing.Point(21, 304)
         Me.Password_Box.Name = "Password_Box"
         Me.Password_Box.Size = New System.Drawing.Size(196, 20)
         Me.Password_Box.TabIndex = 1
@@ -157,10 +159,19 @@ Partial Class Mainpage_SMH
         '
         'UserName_Box
         '
-        Me.UserName_Box.Location = New System.Drawing.Point(21, 278)
+        Me.UserName_Box.Location = New System.Drawing.Point(21, 256)
         Me.UserName_Box.Name = "UserName_Box"
         Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
         Me.UserName_Box.TabIndex = 0
+        '
+        'Register_Button
+        '
+        Me.Register_Button.Location = New System.Drawing.Point(21, 363)
+        Me.Register_Button.Name = "Register_Button"
+        Me.Register_Button.Size = New System.Drawing.Size(196, 23)
+        Me.Register_Button.TabIndex = 9
+        Me.Register_Button.Text = "ลงทะเบียนลูกค้า"
+        Me.Register_Button.UseVisualStyleBackColor = True
         '
         'Mainpage_SMH
         '
@@ -199,4 +210,5 @@ Partial Class Mainpage_SMH
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents RegisterButton As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents Register_Button As Button
 End Class

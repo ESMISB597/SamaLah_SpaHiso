@@ -13,4 +13,8 @@
         Password_Box.Text = ""
     End Sub
 
+    Private Sub Register_Button_Click(sender As Object, e As EventArgs) Handles Register_Button.Click
+        Me.Hide()
+        CustomerRegister.Show()
+    End Sub
 End Class
