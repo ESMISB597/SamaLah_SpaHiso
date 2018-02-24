@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bill.Designer.vb">
+      <DependentUpon>bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerRegister.Designer.vb">
       <DependentUpon>CustomerRegister.vb</DependentUpon>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="bill.resx">
+      <DependentUpon>bill.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerRegister.resx">
       <DependentUpon>CustomerRegister.vb</DependentUpon>
     </EmbeddedResource>
