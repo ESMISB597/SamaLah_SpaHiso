@@ -36,6 +36,8 @@ Partial Class Mainpage_SMH
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Password_Box = New System.Windows.Forms.TextBox()
         Me.UserName_Box = New System.Windows.Forms.TextBox()
+
+        Me.RegisterButton = New System.Windows.Forms.Button()
         Me.LandingPage_Box.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LoginGroupbox.SuspendLayout()
@@ -87,6 +89,7 @@ Partial Class Mainpage_SMH
         '
         'LoginGroupbox
         '
+        Me.LoginGroupbox.Controls.Add(Me.RegisterButton)
         Me.LoginGroupbox.Controls.Add(Me.PictureBox1)
         Me.LoginGroupbox.Controls.Add(Me.Reset_Button)
         Me.LoginGroupbox.Controls.Add(Me.Login_Button)
@@ -111,8 +114,31 @@ Partial Class Mainpage_SMH
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        Me.PictureBox1.Image = Global.Samalah_SpaHiso.My.Resources.Resources.default_avatar
+        Me.PictureBox1.Location = New System.Drawing.Point(30, 45)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(176, 173)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
         'Reset_Button
         '
+        Me.Reset_Button.Location = New System.Drawing.Point(135, 340)
+        Me.Reset_Button.Name = "Reset_Button"
+        Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
+        Me.Reset_Button.TabIndex = 5
+        Me.Reset_Button.Text = "ล้างทั้งหมด"
+        Me.Reset_Button.UseVisualStyleBackColor = True
+        '
+        'Login_Button
+        '
+        Me.Login_Button.Location = New System.Drawing.Point(18, 340)
+        Me.Login_Button.Name = "Login_Button"
+        Me.Login_Button.Size = New System.Drawing.Size(79, 23)
+        Me.Login_Button.TabIndex = 4
+        Me.Login_Button.Text = "เข้าสู่ระบบ"
+        Me.Login_Button.UseVisualStyleBackColor = True
         Me.Reset_Button.Location = New System.Drawing.Point(138, 362)
         Me.Reset_Button.Name = "Reset_Button"
         Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
@@ -161,9 +187,47 @@ Partial Class Mainpage_SMH
         Me.UserName_Box.Name = "UserName_Box"
         Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
         Me.UserName_Box.TabIndex = 0
+
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(18, 288)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "รหัสผู้ใช้งาน"
         '
-        'Mainpage_SMH
+        'Label1
         '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(18, 237)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "ชื่อผู้ใช้งาน"
+        '
+        'Password_Box
+        '
+        Me.Password_Box.Location = New System.Drawing.Point(18, 304)
+        Me.Password_Box.Name = "Password_Box"
+        Me.Password_Box.Size = New System.Drawing.Size(196, 20)
+        Me.Password_Box.TabIndex = 1
+        Me.Password_Box.UseSystemPasswordChar = True
+        '
+        'UserName_Box
+        '
+        Me.UserName_Box.Location = New System.Drawing.Point(18, 256)
+        Me.UserName_Box.Name = "UserName_Box"
+        Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
+        Me.UserName_Box.TabIndex = 0
+        '
+        'RegisterButton
+        '
+        Me.RegisterButton.Location = New System.Drawing.Point(18, 370)
+        Me.RegisterButton.Name = "RegisterButton"
+        Me.RegisterButton.Size = New System.Drawing.Size(196, 23)
+        Me.RegisterButton.TabIndex = 7
+        Me.RegisterButton.Text = "ลงทะเบียน"
+        Me.RegisterButton.UseVisualStyleBackColor = True
+
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(918, 513)
@@ -198,4 +262,5 @@ Partial Class Mainpage_SMH
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents RegisterButton As Button
 End Class

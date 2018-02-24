@@ -12,4 +12,13 @@
         UserName_Box.Text = ""
         Password_Box.Text = ""
     End Sub
+
+    Private Sub Login_Button_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub RegisterButton_Click(sender As Object, e As EventArgs) Handles RegisterButton.Click
+        Me.Hide()
+        CustomerRegister.Show()
+    End Sub
 End Class
