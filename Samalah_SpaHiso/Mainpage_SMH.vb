@@ -12,4 +12,5 @@
         UserName_Box.Text = ""
         Password_Box.Text = ""
     End Sub
+
 End Class
