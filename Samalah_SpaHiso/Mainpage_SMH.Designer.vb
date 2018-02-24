@@ -24,22 +24,22 @@ Partial Class Mainpage_SMH
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.LandingPage_Box = New System.Windows.Forms.GroupBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Time_Proc = New System.Windows.Forms.Timer(Me.components)
         Me.TimeLabel = New System.Windows.Forms.Label()
         Me.LoginGroupbox = New System.Windows.Forms.GroupBox()
-        Me.UserName_Box = New System.Windows.Forms.TextBox()
-        Me.Password_Box = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Login_Button = New System.Windows.Forms.Button()
-        Me.Reset_Button = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Reset_Button = New System.Windows.Forms.Button()
+        Me.Login_Button = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Password_Box = New System.Windows.Forms.TextBox()
+        Me.UserName_Box = New System.Windows.Forms.TextBox()
         Me.LandingPage_Box.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LoginGroupbox.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LandingPage_Box
@@ -52,6 +52,23 @@ Partial Class Mainpage_SMH
         Me.LandingPage_Box.TabIndex = 0
         Me.LandingPage_Box.TabStop = False
         Me.LandingPage_Box.Text = "ยินดีต้อนรับสู่ สมาหลาสปาไฮโซ"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(6, 331)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(631, 147)
+        Me.ListBox1.TabIndex = 1
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Samalah_SpaHiso.My.Resources.Resources.landing
+        Me.PictureBox2.Location = New System.Drawing.Point(8, 18)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(631, 307)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
         '
         'Time_Proc
         '
@@ -84,57 +101,6 @@ Partial Class Mainpage_SMH
         Me.LoginGroupbox.TabStop = False
         Me.LoginGroupbox.Text = "Login"
         '
-        'UserName_Box
-        '
-        Me.UserName_Box.Location = New System.Drawing.Point(21, 278)
-        Me.UserName_Box.Name = "UserName_Box"
-        Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
-        Me.UserName_Box.TabIndex = 0
-        '
-        'Password_Box
-        '
-        Me.Password_Box.Location = New System.Drawing.Point(21, 326)
-        Me.Password_Box.Name = "Password_Box"
-        Me.Password_Box.Size = New System.Drawing.Size(196, 20)
-        Me.Password_Box.TabIndex = 1
-        Me.Password_Box.UseSystemPasswordChar = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 259)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "ชื่อผู้ใช้งาน"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(21, 310)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "รหัสผู้ใช้งาน"
-        '
-        'Login_Button
-        '
-        Me.Login_Button.Location = New System.Drawing.Point(21, 362)
-        Me.Login_Button.Name = "Login_Button"
-        Me.Login_Button.Size = New System.Drawing.Size(79, 23)
-        Me.Login_Button.TabIndex = 4
-        Me.Login_Button.Text = "เข้าสู่ระบบ"
-        Me.Login_Button.UseVisualStyleBackColor = True
-        '
-        'Reset_Button
-        '
-        Me.Reset_Button.Location = New System.Drawing.Point(138, 362)
-        Me.Reset_Button.Name = "Reset_Button"
-        Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
-        Me.Reset_Button.TabIndex = 5
-        Me.Reset_Button.Text = "ล้างทั้งหมด"
-        Me.Reset_Button.UseVisualStyleBackColor = True
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Samalah_SpaHiso.My.Resources.Resources.default_avatar
@@ -145,22 +111,56 @@ Partial Class Mainpage_SMH
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox2
+        'Reset_Button
         '
-        Me.PictureBox2.Image = Global.Samalah_SpaHiso.My.Resources.Resources.landing
-        Me.PictureBox2.Location = New System.Drawing.Point(8, 18)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(631, 307)
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
+        Me.Reset_Button.Location = New System.Drawing.Point(138, 362)
+        Me.Reset_Button.Name = "Reset_Button"
+        Me.Reset_Button.Size = New System.Drawing.Size(79, 23)
+        Me.Reset_Button.TabIndex = 5
+        Me.Reset_Button.Text = "ล้างทั้งหมด"
+        Me.Reset_Button.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'Login_Button
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(6, 331)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(631, 147)
-        Me.ListBox1.TabIndex = 1
+        Me.Login_Button.Location = New System.Drawing.Point(21, 362)
+        Me.Login_Button.Name = "Login_Button"
+        Me.Login_Button.Size = New System.Drawing.Size(79, 23)
+        Me.Login_Button.TabIndex = 4
+        Me.Login_Button.Text = "เข้าสู่ระบบ"
+        Me.Login_Button.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(21, 310)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "รหัสผู้ใช้งาน"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(21, 259)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "ชื่อผู้ใช้งาน"
+        '
+        'Password_Box
+        '
+        Me.Password_Box.Location = New System.Drawing.Point(21, 326)
+        Me.Password_Box.Name = "Password_Box"
+        Me.Password_Box.Size = New System.Drawing.Size(196, 20)
+        Me.Password_Box.TabIndex = 1
+        Me.Password_Box.UseSystemPasswordChar = True
+        '
+        'UserName_Box
+        '
+        Me.UserName_Box.Location = New System.Drawing.Point(21, 278)
+        Me.UserName_Box.Name = "UserName_Box"
+        Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
+        Me.UserName_Box.TabIndex = 0
         '
         'Mainpage_SMH
         '
@@ -176,10 +176,10 @@ Partial Class Mainpage_SMH
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = ":: Welcome To Samalah Spa Hi-So"
         Me.LandingPage_Box.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LoginGroupbox.ResumeLayout(False)
         Me.LoginGroupbox.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
