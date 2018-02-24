@@ -21,4 +21,8 @@
         Me.Hide()
         CustomerRegister.Show()
     End Sub
+
+    Private Sub Login_Button_Click_1(sender As Object, e As EventArgs) Handles Login_Button.Click
+        ListBox1.Items.Add("กำลังต่อฐานข้อมูล")
+    End Sub
 End Class

@@ -29,6 +29,7 @@ Partial Class Mainpage_SMH
         Me.Time_Proc = New System.Windows.Forms.Timer(Me.components)
         Me.TimeLabel = New System.Windows.Forms.Label()
         Me.LoginGroupbox = New System.Windows.Forms.GroupBox()
+        Me.RegisterButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Reset_Button = New System.Windows.Forms.Button()
         Me.Login_Button = New System.Windows.Forms.Button()
@@ -36,7 +37,6 @@ Partial Class Mainpage_SMH
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Password_Box = New System.Windows.Forms.TextBox()
         Me.UserName_Box = New System.Windows.Forms.TextBox()
-        Me.RegisterButton = New System.Windows.Forms.Button()
         Me.LandingPage_Box.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LoginGroupbox.SuspendLayout()
@@ -103,6 +103,15 @@ Partial Class Mainpage_SMH
         Me.LoginGroupbox.TabStop = False
         Me.LoginGroupbox.Text = "Login"
         '
+        'RegisterButton
+        '
+        Me.RegisterButton.Location = New System.Drawing.Point(18, 370)
+        Me.RegisterButton.Name = "RegisterButton"
+        Me.RegisterButton.Size = New System.Drawing.Size(196, 23)
+        Me.RegisterButton.TabIndex = 7
+        Me.RegisterButton.Text = "ลงทะเบียน"
+        Me.RegisterButton.UseVisualStyleBackColor = True
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Samalah_SpaHiso.My.Resources.Resources.default_avatar
@@ -163,15 +172,6 @@ Partial Class Mainpage_SMH
         Me.UserName_Box.Name = "UserName_Box"
         Me.UserName_Box.Size = New System.Drawing.Size(196, 20)
         Me.UserName_Box.TabIndex = 0
-        '
-        'RegisterButton
-        '
-        Me.RegisterButton.Location = New System.Drawing.Point(18, 370)
-        Me.RegisterButton.Name = "RegisterButton"
-        Me.RegisterButton.Size = New System.Drawing.Size(196, 23)
-        Me.RegisterButton.TabIndex = 7
-        Me.RegisterButton.Text = "ลงทะเบียน"
-        Me.RegisterButton.UseVisualStyleBackColor = True
         '
         'Mainpage_SMH
         '
